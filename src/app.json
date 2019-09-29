@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/index/main",
     "pages/personal/main",
     "pages/searchBook/main",
-    "pages/books/main",
-    "pages/index/main"
+    "pages/books/main"
   ],
   "window":{
     "backgroundTextStyle": "light",

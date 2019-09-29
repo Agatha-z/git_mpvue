@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div class="indexContainer">
     <swiper @change="handleCount" class="swiperBig" :indicator-dots="index !==3" indicator-color indicator-active-color="#e43a3d">
 		<swiper-item>
@@ -25,15 +25,18 @@ export default {
 			index: 0
 		}
 	},
+	created(){
+		console.log(this.index)
+	},
 	methods: {
 		handleCount(e) {
 			// console.log(e);
-			this.index = e.mp.detail.current
+			this.index = e.mp.detail.current;
 		},
 		toBooks(){
 			wx.switchTab({
 				url:'/pages/books/main'
-			})
+			});
 		}
 	}
 }
